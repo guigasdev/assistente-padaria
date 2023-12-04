@@ -44,6 +44,25 @@ def reply():
           especifico(1)
           loop()
     
+    elif(msgt == "Vatapá"):
+          especifico(2)
+          loop()
+    elif(msgt == "Arroz"):
+         especifico(3)
+         loop()      
+    elif(msgt == "Patê"):
+         especifico(4)
+         loop()    
+    elif(msgt == "Empadão"):
+         especifico(5)
+         loop()
+    elif(msgt == "Quiche"):
+         especifico(6)
+         loop()
+    elif(msgt) == "kit nalino" or "kitnatal" or "Comidas natalista" or "Kit natal 1" or "Kit natal 2":
+         especifico(7)
+         (loop)
+    
     elif(msgt == "OI" or msgt == "Oi" or msgt == "oi" or msgt == "Olá" or msgt == "olá" or msgt == "Ola" or msgt == "ola" or msgt == "fala" or msgt == "opa" or msgt == "Fala" or msgt == "Opa" or msgt == "Bom dia" or msgt == "bom dia" or msgt == "bomdia" or msgt == "Boa tarde" or msgt == "boa tarde" or msgt == "boatarde" or msgt == "Bom tarde" or msgt == "bom tarde" or msgt == "bomtarde" or msgt == "Boa noite" or msgt == "boa noite" or msgt == "boanoite" or msgt == "Bom noite" or msgt == "bom noite" or msgt == "bomnoite" or msgt == "Boa dia" or msgt == "boa dia" or msgt == "boadia" or msgt == "Boadia" or msgt == "Bomtarde" or msgt == "Bomnoite" or msgt == "cuida" or msgt == "chama" or msgt == "agiliza" or msgt == "Pode me ajudar?" or msgt == "Pode me ajudar" or msgt == "pode me ajudar?" or msgt == "pode me ajudar" ):
         intro()
         ajuda()
@@ -176,9 +195,78 @@ KIT NATALINO 2 - VALOR: R$ 699,00 - SERVE 10 PESSOAS
 1 Sobremesa (pavê ou torta charlotte)
 100 Salgados.
 
+
 """
           sendMessage(msg, sen_num, me_num)
+    
+     elif(num == 2):
+          msg = """Nossos Pratos com Vatapá são:
+                Vatapá de Camarão ------- R$ 90,00
+                Vatapá de Frango -------- R$ 60,00
+          """
+          sendMessage(msg, sen_num, me_num)
+     elif(num == 3):
+          msg = """
+         
+                Nossos Pratos com Arroz são:
+                Arroz Natalino ---------- R$ 45,00
+                Arroz Branco ------------ R$ 25,00
+                Arroz de Camarão -------- R$ 75,00
+"""
+          sendMessage(msg, sen_num, me_num)
+         
+     elif(num == 4):
+          msg = """
+                Nossos pratos com Patê são:
+                Patê de Frango - R$ 45,00
+                Patê de Presunto - R$ 40,00
+          """
+          sendMessage(msg, sen_num, me_num)
+     elif(num == 5):
+          msg = """
+                Nossos pratos de empadão são:
+                Empadão Frango - R$ 90,00
+                Empadão Carne do Sol - R$ 120,00
+                Empadão Misto - R$ 109,00
+"""
+          sendMessage(msg, sen_num , me_num)
+     elif(num == 6):
+          msg = """
+                Nossos pratos de Quiche são:
+                Quiche Camarão - R$ 190,00
+                Quiche de Queijo c/ geléia de pimenta - R$ 150,00
+                Quiche de Espinafre c/ ricota - R$ 150,00
+                Quiche de Álho Poro - R$ 150,00
+                Quiche de Tomate Seco c/ provolone - R$ 150,00
+"""
+          sendMessage(msg, sen_num , me_num)
+     elif(num == 7):
+          msg = """
+KIT NATALINO 1 - VALOR: R$999,00  - SERVE 15 PESSOAS
+                               
+1 Peru ou Pernil 4kg;
+2 kg Carne Molho Madeira;
+1 Torta salgada para 15 pessoas (escolha entre os sabores: mista ou carne do sol);
+1 kg de Vatapá de Frango;
+1 kg de Salpicão;
+1 kg de Arroz Natalina;
+1 kg de Arroz Branco;
+1 kg de Farofa Natalina;
+1 Sobremesa (pavê ou torta de charlotte
+2 Refrigerante de 2 litros
 
+-----------------------------------------------------------
+
+KIT NATALINO 2 - VALOR: R$ 699,00 - SERVE 10 PESSOAS
+
+1 Peru ou Pernil 4kg;
+1 kg de Salpicão;
+1 kg de Arroz Natalina;
+1 kg de Vatapá de Frango;
+1 kg de Farofa Natalina;
+1 Sobremesa (pavê ou torta charlotte)
+100 Salgados."""
+          sendMessage(msg, sen_num, me_num)
 def find_closest_match(user_input, valid_words):
    
     closest_match = min(valid_words, key=lambda word: Levenshtein.distance(user_input, word))
