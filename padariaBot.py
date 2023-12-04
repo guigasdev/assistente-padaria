@@ -59,7 +59,7 @@ def reply():
     elif(msgt == "Quiche"):
          especifico(6)
          loop()
-    elif(msgt) == "kit nalino" or "kitnatal" or "Comidas natalista" or "Kit natal 1" or "Kit natal 2":
+    elif(msgt) == "kit nalino" or "kitnatal" or "Comidas natalista" or "Kit natal 1" or "Kit natal 2" or "opções natalinas":
          especifico(7)
          (loop)
     
