@@ -44,19 +44,19 @@ def reply():
           especifico(1)
           loop()
     
-    elif(msgt == "Vatapá"):
+    elif(msgt == "Vatapá" or "vatapa" or "vatapá" or "VATAPÁ" or "VATAPA"):
           especifico(2)
           loop()
-    elif(msgt == "Arroz"):
+    elif(msgt == "Arroz" or "ARROZ" or "arroz"):
          especifico(3)
          loop()      
-    elif(msgt == "Patê"):
+    elif(msgt == "Patê" or "PATE" or "pate" or "PATÊ" or "patê"):
          especifico(4)
          loop()    
-    elif(msgt == "Empadão"):
+    elif(msgt == "Empadão" or "EMPADAO" or "empadao" or "EMPADÃO" or "empadão"):
          especifico(5)
          loop()
-    elif(msgt == "Quiche"):
+    elif(msgt == "Quiche" or "QUICHE" or "quiche"):
          especifico(6)
          loop()
     elif(msgt) == "kit nalino" or "kitnatal" or "Comidas natalista" or "Kit natal 1" or "Kit natal 2" or "opções natalinas":
@@ -81,7 +81,74 @@ def secondReply(msgtext):
         sendMessage(msg, sen_num, me_num)
         loop()
     elif(msgtext == "2"):
-        msg = "Para acessar nosso cardápio, acesse: \n https://drive.google.com/file/d/1qo3Z-i1pKPi38rn8K3iM4aA70DmoVguX/view"
+        msg = """
+            Nosso Cardápio dispões dos seguintes pratos:
+                Bandeja de Frios -------- R$ 130,00
+                Vatapá de Camarão ------- R$ 90,00
+                Vatapá de Frango -------- R$ 60,00
+                Salpicão ---------------- R$ 65,00
+                Tender ------------------ R$ 120,00
+                Arroz Natalino ---------- R$ 45,00
+                Arroz Branco ------------ R$ 25,00
+                Arroz de Camarão -------- R$ 75,00
+                Frango Quatro Queijos --- R$ 70,00
+                Lagarto ao Molho Madeira - R$ 109,00
+                Strogonoff de Carne ------ R$ 90,00
+                Cento de Salgados (Coxinha, bolinha, pastel carne ou queijo) - R$ 69,90
+                Mini Árabe Recheado (cento) - R$ 190,00
+                Pão Americano - R$ 69,00
+                Farofa Natalina - R$ 50,00
+                Rabanada - R$ 55,00
+                Patê de Frango - R$ 45,00
+                Patê de Presunto - R$ 40,00
+                Empadão Frango - R$ 90,00
+                Empadão Carne do Sol - R$ 120,00
+                Empadão Misto - R$ 109,00
+                Quiche Camarão - R$ 190,00
+                Quiche de Queijo c/ geléia de pimenta - R$ 150,00
+                Quiche de Espinafre c/ ricota - R$ 150,00
+                Quiche de Álho Poro - R$ 150,00
+                Quiche de Tomate Seco c/ provolone - R$ 150,00
+
+                Pavê Taça (p) - R$ 109,00
+                Charlotte Taça (p) - R$ 109,00
+                Pudim (M) - R$ 90,00 
+                Taça Felicidade (g) - R$ 209,00
+                Taça Felicidade (p) - R$ 109,00
+                Docinho - R$ 2,00
+                Bolo Indiano (M) - R$ 99,00
+                Bolo da Vovó (M) - R$ 99,00
+                Peru  - R$ 350,00 
+                Pernil  4kg  - R$ 390,00
+                Chester 4kg - R$ 299,00
+
+KIT NATALINO 1 - VALOR: R$999,00  - SERVE 15 PESSOAS
+                               
+1 Peru ou Pernil 4kg;
+2 kg Carne Molho Madeira;
+1 Torta salgada para 15 pessoas (escolha entre os sabores: mista ou carne do sol);
+1 kg de Vatapá de Frango;
+1 kg de Salpicão;
+1 kg de Arroz Natalina;
+1 kg de Arroz Branco;
+1 kg de Farofa Natalina;
+1 Sobremesa (pavê ou torta de charlotte
+2 Refrigerante de 2 litros
+
+-----------------------------------------------------------
+
+KIT NATALINO 2 - VALOR: R$ 699,00 - SERVE 10 PESSOAS
+
+1 Peru ou Pernil 4kg;
+1 kg de Salpicão;
+1 kg de Arroz Natalina;
+1 kg de Vatapá de Frango;
+1 kg de Farofa Natalina;
+1 Sobremesa (pavê ou torta charlotte)
+100 Salgados.
+
+
+"""
         sendMessage(msg, sen_num, me_num)
         
     elif(msgtext == "3"):
