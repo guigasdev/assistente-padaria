@@ -4,15 +4,19 @@ from flask import Flask,request
 from twilio.twiml.messaging_response import MessagingResponse
 import Levenshtein
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 apbot = Flask(__name__)
 def sendMessage(text : str, to: str, fromwwp: str):
 
-    account_sid = "AC9db2603c4e9d8758fc629c78d77c2e92"
-    auth_token = "1d39effac65729ebaa495660da527f6f"
+    account_sid = ACCOUNT_SID,
+    auth_token = AUTH_TOKEN,
     client = Client(account_sid, auth_token)
     
     message = client.messages.create(
-        from_ ='whatsapp:+558586964555',
+        from_ = f'whatsapp: {WHATSSAP_NUMBER}',
         body=text,
         to=to
         )
